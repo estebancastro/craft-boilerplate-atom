@@ -14,7 +14,7 @@ install:
 		$(filter-out $@,$(MAKECMDGOALS))
 
 	@echo "installing craft plugins..."
-	ddev composer require "nystudio107/craft-vite:^5.0.0" -W && ddev exec php craft plugin/install vite
+	ddev composer require "nystudio107/craft-vite:^5.0.1" -W && ddev exec php craft plugin/install vite
 	ddev composer require "nystudio107/craft-minify:^5.0.0" -W && ddev exec php craft plugin/install minify
 
 	@echo "installing npm devDependencies..."
